@@ -1,0 +1,23 @@
+{
+  "AWSEBDockerrunVersion": 1,
+  "volumes": [
+    {
+      "name": "react-starter",
+      "host": {
+        "sourcePath": "/var/www"
+      }
+    }
+  ],
+  "containerDefinitions": [
+    {
+      "name": "eb-docker-react-starter",
+      "essential": true,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 3000
+        }
+      ]
+    }
+  ]
+}
