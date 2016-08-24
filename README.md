@@ -1,4 +1,3 @@
-
 # [EB](http://aws.amazon.com/elasticbeanstalk/) [Docker](https://www.docker.com/) [ReactJS](https://facebook.github.io/react/) [Starter Kit](https://www.reactstarterkit.com)
 
 Example of developing and deploying a [dockerized]((https://www.docker.com/)) [React Starter Kit](https://nodejs.org/) app to [Elastic Beanstalk](http://aws.amazon.com/elasticbeanstalk/)
@@ -11,7 +10,9 @@ Requires: Docker, AWS account, [EB cli](http://docs.aws.amazon.com/elasticbeanst
 	```bash
 	git pull origin integration
 	```
+
 2. make changes
+
 3. build image & run local app:
 
 	```bash
@@ -143,4 +144,3 @@ Before you start, take a moment to see how the project structure looks like:
 ```
 
 For more information about hacking on RSK, see the [Getting Started with the React Starter Kit](https://github.com/kriasoft/react-starter-kit/blob/master/docs/getting-started.md)
-
