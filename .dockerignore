@@ -3,16 +3,5 @@
 ecl_Crash.dump
 /node_modules
 .git
-.gitignore# Elastic Beanstalk Files
-.elasticbeanstalk/*
-.git
-.gitignore# Elastic Beanstalk Files
-.elasticbeanstalk/*
-.git
-.gitignore# Elastic Beanstalk Files
-.elasticbeanstalk/*
-.git
-.gitignore# Elastic Beanstalk Files
-.elasticbeanstalk/*
-.git
 .gitignore
+.elasticbeanstalk/*

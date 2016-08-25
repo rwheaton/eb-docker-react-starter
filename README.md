@@ -16,17 +16,18 @@ Requires: Docker, AWS account, [EB cli](http://docs.aws.amazon.com/elasticbeanst
 3. build image & run local app:
 
 	```bash
+	# set any flags, configs, secrets to pass the container
 	$ eb local setenv HOST=http://localhost:3000 PORT=3000
 	$ eb local run --port 3000
 	```
 	
 	[more on eb local usage](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-local.html)
 
-4. you could alternatively build and run a traditional docker container:
+4. for development, run a traditional docker container so that we can affect the app code:
 	
 	```bash
 	$ docker build -t eb-docker-react-starter .
-	$ docker run -p 3000:3000 --rm --name eb-docker-react-starter-development -i -t eb-docker-react-starter
+	$ docker run -p 3000:3000 -v $(pwd)/build:/var/www/build/ -v $(pwd)/logs:/var/logs/ --rm --name eb-docker-react-starter-development -i -t eb-docker-react-starter
 	```
 
 5. to test, open browser to `http://localhost:3000`
